@@ -3,20 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Niranjan Ramesh</title>
+  <title>Niranjan Ramesh - Software Engineer</title>
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
   <header>
     <h1>Niranjan Ramesh</h1>
+    <p class="tagline">Software Engineer specializing in Data & AI Platforms, Cloud Infrastructure, and Secure Systems</p>
+    
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    
     <div class="contact-info">
       <p><a href="mailto:niranjanram107@gmail.com">Email</a></p>
       <p><a href="https://www.linkedin.com/in/niranjan-ramesh/">LinkedIn</a></p>
@@ -26,20 +30,62 @@
 
   <main>
     <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Software Engineer from Vancouver, BC, currently working at the Public Health Agency of Canada. Previously, I worked as a Data Scientist at Statistics Canada and as a Software Engineer at Mr. Cooper in Chennai, India. I pursued my master's degree in Computer Science from Simon Fraser University in Burnaby, BC. I'm passionate about TypeScript, JavaScript, Kubernetes, Python, Computer Vision, Machine Learning, and distributed systems. I'm adept in building scalable and efficient solutions for various domains.</p>
-      </section>
+      <h2>About Me</h2>
+      <p>I'm a Software Engineer with extensive experience building and governing scalable data and AI platforms within the Canadian government. Currently at Health Canada, I specialize in cloud-native solutions, Kubernetes, and secure software development (DevSecOps) to ensure data quality, interoperability, and deliver analytical outcomes for decision-making.</p>
       
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <ul id="projects-list">
-          <li><a href="https://github.com/niranjan-ramesh/Computer-Vision">Computer Vision</a>: Dabbled with Computer Vision techniques including 3D reconstruction, object detection, segmentation, instance segmentation, and Planar Homography.</li>
-          <li><a href="https://github.com/niranjan-ramesh/whats-cooking">Food Recommender System</a>: Developed a colloborative and content-based food recommender system.</li>
-          <li><a href="https://github.com/niranjan-ramesh/sharemarket-streaming-sample">Kafka Streams API Dabbling</a>: Played around with KStream and KTable API for real-time data processing.</li>
+      <div class="skills-highlight">
+        <h3>Core Competencies</h3>
+        <ul>
+          <li>Cloud & DevOps: Kubernetes (CKS, CKA, CKAD), Docker, Terraform, GCP, AWS, Azure</li>
+          <li>AI/ML & Data Engineering: PyTorch, Hugging Face, Transformers, Data Extraction, Computer Vision</li>
+          <li>Secure Systems: DevSecOps, RBAC, Vulnerability Management, Secure API Design</li>
+          <li>Programming: Python, TypeScript, Java, JavaScript, SQL</li>
         </ul>
-      </section>
-      
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Professional Focus</h2>
+      <div class="experience-highlights">
+        <div class="highlight-card">
+          <h3>Data & AI Platforms</h3>
+          <p>Building scalable data solutions and AI pipelines for enterprise use, with experience in information extraction, computer vision, and model deployment.</p>
+        </div>
+        
+        <div class="highlight-card">
+          <h3>Cloud Infrastructure</h3>
+          <p>Designing and implementing secure, multi-tenant Kubernetes platforms and cloud-native solutions on GCP, AWS, and Azure.</p>
+        </div>
+        
+        <div class="highlight-card">
+          <h3>Secure Analytics</h3>
+          <p>Implementing DevSecOps practices, automated security scanning, and secure data sharing workflows for government systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3><a href="https://github.com/niranjan-ramesh/Computer-Vision">Information Extraction Platform</a></h3>
+          <p>Developed a production-scale pipeline for automated tabular data extraction from PDFs using transformer-based object detection and layout analysis, reducing manual processing time by 80%.</p>
+          <span class="tech-tags">PyTorch, Hugging Face, FastAPI, Kubernetes</span>
+        </div>
+        
+        <div class="project-card">
+          <h3><a href="https://github.com/niranjan-ramesh/Computer-Vision">Airplane Detection in Satellite Imagery</a></h3>
+          <p>Built computer vision pipelines for object detection and instance segmentation of airplanes in high-resolution satellite images using Detectron2 and custom U-Net architectures.</p>
+          <span class="tech-tags">Computer Vision, Detectron2, Python, Object Detection</span>
+        </div>
+        
+        <div class="project-card">
+          <h3><a href="https://github.com/niranjan-ramesh/sharemarket-streaming-sample">Secure Data Platform Infrastructure</a></h3>
+          <p>Engineered multi-tenant GKE platforms with automated security scanning and GitOps workflows, reducing deployment times and improving system security.</p>
+          <span class="tech-tags">Kubernetes, Terraform, ArgoCD, DevSecOps</span>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
