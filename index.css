@@ -141,7 +141,7 @@ h3 {
   box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 }
 
-/* Timeline Styles */
+/* Timeline Styles - FIXED SPACING */
 .timeline {
   position: relative;
   max-width: 800px;
@@ -151,7 +151,7 @@ h3 {
 .timeline::before {
   content: '';
   position: absolute;
-  left: 30px;
+  left: 120px; /* Moved further right to create space for dates */
   top: 0;
   bottom: 0;
   width: 2px;
@@ -161,17 +161,19 @@ h3 {
 .timeline-item {
   position: relative;
   margin-bottom: 2rem;
-  padding-left: 80px;
+  padding-left: 160px; /* Increased padding to match new line position */
 }
 
 .timeline-date {
   position: absolute;
   left: 0;
   top: 0;
-  width: 70px;
+  width: 100px; /* Increased width for better date display */
   font-weight: 600;
   color: #2c3e50;
   font-size: 0.9rem;
+  text-align: right; /* Align dates to the right */
+  padding-right: 20px; /* Space between date and blue line */
 }
 
 .timeline-content {
@@ -185,8 +187,8 @@ h3 {
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: 26px;
-  top: 10px;
+  left: 114px; /* Adjusted to align with the new line position (120px - 6px) */
+  top: 20px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -291,21 +293,23 @@ footer {
     grid-template-columns: 1fr;
   }
   
+  /* Mobile timeline adjustments */
   .timeline::before {
-    left: 20px;
+    left: 80px; /* Adjusted for mobile */
   }
   
   .timeline-item {
-    padding-left: 60px;
+    padding-left: 100px; /* Adjusted for mobile */
   }
   
   .timeline-date {
-    width: 50px;
+    width: 70px; /* Adjusted for mobile */
     font-size: 0.8rem;
+    padding-right: 10px; /* Reduced padding for mobile */
   }
   
   .timeline-item::before {
-    left: 16px;
+    left: 74px; /* Adjusted for mobile (80px - 6px) */
   }
   
   .tech-stack {
